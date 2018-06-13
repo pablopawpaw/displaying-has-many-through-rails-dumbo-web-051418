@@ -29,7 +29,7 @@ Things get slightly more complicated when we talk about the relationship between
     <td> post_id </td>
     <td> user_id </td>
   </tr>
-  
+
   <tr>
     <td> 1 </td>
     <td> "I loved this post!" </td>
@@ -43,7 +43,7 @@ For this instance, we know that the `Comment` with an ID of `1` was created by t
 Let's set this up. First, we'll need migrations for `comments`, `posts`, and `users` tables. We've included migrations and models in this repo, so you can follow along.
 
 ```ruby
-# db/migrate/xxx_create_posts
+# db/migrate/xxx_create_posts 
 
 class CreatePosts < ActiveRecord::Migration
   def change
